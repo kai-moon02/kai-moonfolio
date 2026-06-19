@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00bfff;
+        }
+    </style>
+</head>
+<body style="background-color: #A482B3;">
+
+    <nav>
+        <ul>
+            <li><a href="portifolio.html">portifilio</a></li>
+            <li><a href="index.calculadora.html">calculadora</a></li>
+            <li><a href="index.nomes.html">nomes</a></li>
+            <li><a href="projeto web.html">conta</a></li>
+        </ul>
+    </nav>
+	<h1>Esse site é um portifólio pessoal que ira falar um pouco quem eu sou</h1>
+	<br>
+	<h2>alguns topicos desse site:</h2>
+	<ul>
+		<li>sobre mim</li>
+		<li>meu trabalho</li>
+		<li>meus hobbies</li>
+		<li>detalhes finais</li>
+	</ul>
+		<br>
+		<h2 style="color:blueviolet;">sobre mim</h2>
+		<p>Bem, meu nome é Kaique Bucci, tenho 23 e acabei por me formar em desenvolvimento de sistemas <br> e biologia marinha. Atualmente me encontro trabalhando em um santuario de animais marinhos, <br>mais especificamente Dragões azuis e coelhos-do-mar. Se voce observar, ao topo do site tem alguns projetos que eu ja fiz.</p>
+		<h2>veja um exemplo das especimes abaixo:</h2>
+		<button onclick="mostrarFoto1()">Foto Dragão</button>
+<button onclick="mostrarFoto2()">Foto coelho</button>
+
+<br><br>
+
+<img id="foto1" src="assets/Dragao-azul.webp" alt="Foto 1" style="display:none; width:300px;">
+<img id="foto2" src="assets/coelho.jpeg" alt="Foto 2" style="display:none; width:300px;">
+
+<script>
+function mostrarFoto1() {
+    let foto = document.getElementById("foto1");
+
+    if (foto.style.display === "none") {
+        foto.style.display = "block";
+    } else {
+        foto.style.display = "none";
+    }
+}
+
+function mostrarFoto2() {
+    let foto = document.getElementById("foto2");
+
+    if (foto.style.display === "none") {
+        foto.style.display = "block";
+    } else {
+        foto.style.display = "none";
+    }
+}
+</script>
+<br>
+<h2 style="color:blueviolet;">Meu trabalho</h2>
+<br>
+<p>Minha carreira de trabalho acabou por mudar um pouco. No inicio o objetivo era concluir o curso na escola da Etec e seguir <br> na carreira de desenvolvedor de sistemas, porém esse nunca foi de fato o meu sonho, entao apos a conclusão do curso tecnico <br> eu comecei no curso de biologia marinha na Unisanta. Atualmente tenho meu emprego nesse santuario de animas marinhos com <br> enfase em Dragões azul e coelhos marinhos, e não pretendo sair daqui tão cedo.</p>
+<br>
+<p>
+    Esse portfólio foi criado para apresentar um pouco sobre mim, meus interesses e meus projetos.
+    Com o tempo, pretendo adicionar novas páginas, melhorar o visual do site e colocar mais trabalhos
+    feitos durante meus estudos.
+</p>
+</body>
+</html>
