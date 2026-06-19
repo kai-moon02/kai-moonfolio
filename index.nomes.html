@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	  <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00bfff;
+        }
+    </style>
+</head>
+<body style="background-color: #A482B3;">
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="portifolio.html">portifilio</a></li>
+            <li><a href="index.calculadora.html">calculadora</a></li>
+            <li><a href="index.nomes.html">nomes</a></li>
+            <li><a href="projeto web.html">conta</a></li>
+        </ul>
+    </nav>
+	<script>
+		function Nome1() {
+			alert("Isabella")
+		}
+		function Nome2() {
+			alert("Kaique")
+		}
+		function exibirNome() {
+			let nome = document.getElementById('inputNome').value
+			alert("Ola " + nome)
+
+			document.getElementById('textoNome').innerHTML = nome
+		}
+	</script>
+</head>
+<body>
+	<input type="button" id="btnIsa" value="Isa" onclick="Nome1()">
+	<input type="button" id="btnKai" value="Kaique" onclick="Nome2()">
+	<br>
+	<input type="text" id="inputNome" placeholder="Insira seu nome aqui!">
+	<input type="button" id="btnExibirNome" value="Exibir nome" onclick="exibirNome()">
+	<h1 id="textoNome">O NOME APARECERA AQUI</h1>
+
+
+</body>
+</html>

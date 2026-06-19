@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULADORA:</title>
+      <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00bfff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="portifolio.html">portifilio</a></li>
+            <li><a href="index.calculadora.html">calculadora</a></li>
+            <li><a href="index.nomes.html">nomes</a></li>
+            <li><a href="projeto web.html">conta</a></li>
+        </ul>
+    </nav>
+	<style>
+		body {
+			background-color: #dcb9ed
+		}
+
+
+	</style>
+	<script type="text/javascript">
+		let numero01, numero02, resultado
+
+		function somar() {
+            numero01 = parseInt(document.getElementById('inputN1').value)
+             numero02 = parseInt(document.getElementById('inputN2').value)
+
+             resultado = numero01 + numero02
+
+             document.getElementById('exibirResultado').innerHTML = resultado
+		}
+		function subtrair() {
+            numero01 = parseInt(document.getElementById('inputN1').value)
+             numero02 = parseInt(document.getElementById('inputN2').value)
+
+             resultado = numero01 - numero02
+
+             document.getElementById('exibirResultado').innerHTML = resultado
+		}
+		function multiplicar() {
+            numero01 = parseInt(document.getElementById('inputN1').value)
+             numero02 = parseInt(document.getElementById('inputN2').value)
+
+             resultado = numero01 * numero02
+
+             document.getElementById('exibirResultado').innerHTML = resultado
+		}
+		function dividir() {
+            numero01 = parseInt(document.getElementById('inputN1').value)
+             numero02 = parseInt(document.getElementById('inputN2').value)
+
+             resultado = numero01 / numero02
+
+             document.getElementById('exibirResultado').innerHTML = resultado
+		}
+	</script>
+</head>
+<body>
+	<h1>CALCULADORA DO KAI E DA MIN🌑🌸</h1>
+ 
+   <h4>PRIMEIRO NÚMERO</h4>
+   <input type="number" id="inputN1"
+   placeholder="insira o Primeiro número">
+   <h4>SEGUNDO NÚMERO:</h4>
+    <input type="number" id="inputN2"
+   placeholder="insira o segundo número">
+   <input type="button" id="btnSomar"
+   value="SOMAR" onclick="somar()">
+   <h4 id="exibirResultado">RESULTADO:</h4>
+    <input type="button" id="btnSubtrair"
+   value="SUBTRAIR" onclick="subtrair()">
+    <input type="button" id="btnmultiplicar"
+   value="MULTIPLICAR" onclick="multiplicar()">
+    <input type="button" id="btndividir"
+   value="DIVIDIR" onclick="dividir()">
+</body>
+</html>
